@@ -87,11 +87,11 @@ ON a.Id = p.AuthorId
 
 
 --13. How many authors are in each grade? (Order your results by grade starting with `1st Grade`)
-SELECT COUNT(CASE WHEN a.gradeId = 5 THEN a.Name ELSE NULL END) as Authors5thGraders,
-	COUNT(CASE WHEN a.gradeId = 4 THEN a.Name ELSE NULL END) as Authors4thGraders,
-	COUNT(CASE WHEN a.gradeId = 3 THEN a.Name ELSE NULL END) as Authors3rdGraders,
-	COUNT(CASE WHEN a.gradeId = 2 THEN a.Name ELSE NULL END) as Authors2ndGraders,
-	COUNT(CASE WHEN a.gradeId = 1 THEN a.Name ELSE NULL END) as Authors1stGraders
+SELECT COUNT(CASE WHEN a.gradeId = 5 THEN a.Id ELSE NULL END) as Authors5thGraders,
+	COUNT(CASE WHEN a.gradeId = 4 THEN a.Id ELSE NULL END) as Authors4thGraders,
+	COUNT(CASE WHEN a.gradeId = 3 THEN a.Id ELSE NULL END) as Authors3rdGraders,
+	COUNT(CASE WHEN a.gradeId = 2 THEN a.Id ELSE NULL END) as Authors2ndGraders,
+	COUNT(CASE WHEN a.gradeId = 1 THEN a.Id ELSE NULL END) as Authors1stGraders
 FROM Author a
 
 --14. What is the title of the poem that has the most words?
