@@ -10,6 +10,7 @@ The data is used for education purposes with permission from the maintainer.
 2. Run the script against [localhost](http://localhost) in SSMS
 3. Open a new query window and select the `PoKi` database. Use this window to write SQL to answer the questions below.
 
+### Questions
 1. What grades are stored in the database?
 2. What emotions may be associated with a poem?
 3. How many poems are in the database?
